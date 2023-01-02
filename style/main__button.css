@@ -1,0 +1,44 @@
+.main__purchase--section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main__purchase--section__detail {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.main__purchase--section__timer {
+  border-radius: 0.5rem;
+  border-style: solid;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+}
+
+.main__purchase--section__button {
+  background-color: var(--lime);
+  border-radius: 0.5rem;
+  border-color: transparent;
+  box-shadow: 5px 5px 5px 5px rgba(199, 244, 100, 0.3);
+  color: var(--black);
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+
+.main__purchase--section__button:hover {
+  background-color: var(--light-lime);
+  box-shadow: 5px 5px 5px 5px rgba(216, 247, 147, 0.3);
+}
+
+.main__purchase--section__button:active {
+  transform: translateY(3px);
+}

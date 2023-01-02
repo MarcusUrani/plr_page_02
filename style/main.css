@@ -1,0 +1,21 @@
+.main {
+  margin: 2rem 0;
+}
+
+.main__header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main__header__subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.main__header__subtitle__bold {
+  background-color: var(--lime);
+  color: var(--black);
+  font-weight: 700;
+  padding: 0.2rem;
+}
