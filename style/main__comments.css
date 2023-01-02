@@ -29,16 +29,12 @@
   font-weight: 500;
 }
 
-.main__comments--section__profile__user--data__figure {
-  width: 5%;
-}
-
 .main__comments--section__profile__user--data__figure__photo {
   border-radius: 100%;
-  width: 100%;
+  width: fit-content;
 }
 
 .main__comments--section__profile__user--data__comment {
   font-weight: 500;
-  margin-left: 3.5rem;
+  margin-left: 4.5rem;
 }
