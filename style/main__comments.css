@@ -6,9 +6,9 @@
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
-  margin: 3rem auto;
+  margin: 3rem 0;
   padding: 3rem 1.5rem;
-  width: 80%;
+  width: 100%;
 }
 
 .main__comments--section__profile {
@@ -31,10 +31,33 @@
 
 .main__comments--section__profile__user--data__figure__photo {
   border-radius: 100%;
-  width: fit-content;
+  width: 100%;
 }
 
 .main__comments--section__profile__user--data__comment {
   font-weight: 500;
   margin-left: 4.5rem;
+}
+
+@media (max-width: 768px) {
+  .main__comments--section {
+    padding: 1.5rem 1rem;
+  }
+
+  .main__comments--section__profile__user--data {
+    gap: 0;
+  }
+
+  .main__comments--section__profile__user--data__name {
+    font-size: 0.9rem;
+  }
+
+  .main__comments--section__profile__user--data__comment {
+    font-size: 0.8rem;
+    margin-left: 4rem;
+  }
+
+  .main__comments--section__profile__user--data__figure__photo {
+    width: 75%;
+  }
 }

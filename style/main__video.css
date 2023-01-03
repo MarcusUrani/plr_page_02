@@ -1,7 +1,12 @@
 .main__video--section {
   background-color: var(--black);
-  border-radius: 0.5rem;
   height: 350px;
   margin: 3rem auto;
-  width: 50%;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .main__video--section {
+    width: 90%;
+  }
 }

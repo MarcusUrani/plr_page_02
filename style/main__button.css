@@ -42,3 +42,20 @@
 .main__purchase--section__button:active {
   transform: translateY(3px);
 }
+
+@media (max-width: 768px) {
+  .main__purchase--section__timer,
+  .main__purchase--section__detail {
+    font-size: 1.25rem;
+  }
+
+  .main__purchase--section__button {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__purchase--section__button {
+    font-size: 1.25rem;
+  }
+}

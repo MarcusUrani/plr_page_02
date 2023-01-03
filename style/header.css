@@ -22,3 +22,19 @@
 .header__title__attention {
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 0;
+  }
+
+  .header__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 0.5rem 0;
+  }
+}
