@@ -10,6 +10,14 @@
   font-weight: 600;
 }
 
+.main__purchase--section__detail__promotion {
+  text-decoration: line-through;
+}
+
+.top-1 {
+  margin-top: 0.5rem;
+}
+
 .main__purchase--section__timer {
   border-radius: 0.5rem;
   border-style: solid;
