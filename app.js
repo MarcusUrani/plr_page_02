@@ -1,4 +1,6 @@
-const comments__section = document.querySelector(".main__comments--section");
+const commentsSection = document.querySelector(".main__comments--section");
+const dateArea = document.querySelector(".main__header__subtitle__bold");
+
 const people = [
   {
     name: "Mario Henrique dos Santos",
@@ -54,10 +56,31 @@ const people = [
   },
 ];
 
-comments__section.innerHTML = people
-  .map(
-    (person) =>
-      `<div class="main__comments--section__profile">
+const verifyDate = (date) => {
+  if (date < 10) {
+    date = "0" + date;
+  }
+
+  return date;
+};
+
+const getDateAndInsertOnScreen = () => {
+  const date = new Date();
+  let actualDay = date.getDate();
+  let actualMonth = date.getMonth() + 1;
+  const actualYear = date.getFullYear();
+
+  actualDay = verifyDate(actualDay);
+  actualMonth = verifyDate(actualMonth);
+
+  dateArea.textContent = `${actualDay}/${actualMonth}/${actualYear}`;
+};
+
+const insertCommentsOnScreen = () => {
+  commentsSection.innerHTML = people
+    .map(
+      (person) =>
+        `<div class="main__comments--section__profile">
     <div class="main__comments--section__profile__user--data">
       <figure class="main__comments--section__profile__user--data__figure">
         <img
@@ -73,5 +96,9 @@ comments__section.innerHTML = people
       ${person.comment}
     </p>
   </div>`
-  )
-  .join("");
+    )
+    .join("");
+};
+
+getDateAndInsertOnScreen();
+insertCommentsOnScreen();
