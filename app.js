@@ -1,11 +1,7 @@
 const commentsSection = document.querySelector(".main__comments--section");
 const dateArea = document.querySelector(".main__header__subtitle__bold");
-const hoursTimer = document.querySelector(
-  ".main__purchase--section__timer__hours"
-);
-const minutesTimer = document.querySelector(
-  ".main__purchase--section__timer__minutes"
-);
+
+const date = new Date();
 
 const people = [
   {
@@ -62,23 +58,21 @@ const people = [
   },
 ];
 
-const verifyDate = (date) => {
-  if (date < 10) {
-    date = "0" + date;
+const verifyDate = (newDate) => {
+  if (newDate < 10) {
+    newDate = "0" + newDate;
   }
 
-  return date;
+  return newDate;
 };
 
 const getDateAndInsertOnScreen = () => {
-  const date = new Date();
   let actualDay = date.getDate();
   let actualMonth = date.getMonth() + 1;
   const actualYear = date.getFullYear();
 
   actualDay = verifyDate(actualDay);
   actualMonth = verifyDate(actualMonth);
-
   dateArea.textContent = `${actualDay}/${actualMonth}/${actualYear}`;
 };
 
