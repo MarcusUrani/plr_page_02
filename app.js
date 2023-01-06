@@ -1,5 +1,11 @@
 const commentsSection = document.querySelector(".main__comments--section");
 const dateArea = document.querySelector(".main__header__subtitle__bold");
+const hoursTimer = document.querySelector(
+  ".main__purchase--section__timer__hours"
+);
+const minutesTimer = document.querySelector(
+  ".main__purchase--section__timer__minutes"
+);
 
 const people = [
   {
